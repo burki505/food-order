@@ -1,0 +1,44 @@
+.cart__container{
+    border-radius: 10px;
+}
+
+.cart{
+    padding: 1rem;
+    overflow: auto;
+    max-height: 15rem;
+}
+.amount__group{
+    padding: 15px;
+}
+.total__amount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total__amount p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+.button__group{
+    display: flex;
+    justify-content: flex-end;
+}
+.button__group button{
+    padding: 0.7rem 1.8rem;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.button__group button:first-child{
+    background: transparent;
+    border: 1px solid tomato;
+    color: black;
+}
+.button__group button:not(:first-child){
+    background: #8A2B06;
+    margin-left: 0.5rem;
+}

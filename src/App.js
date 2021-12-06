@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useEffect } from "react";
+import Header from "./components/Header/Header";
+import NavMenu from "./components/Header/NavMenu";
+import MenusList from "./components/Menus/MenusList";
+import Cart from "./components/Cart/Cart";
+import cartContext from "./components/context/cart-context";
 
 function App() {
+
+  const cartCtx = useContext(cartContext);
+
+  const {isCartOpen, cart, addToCart} = cartCtx;
+  
+
+  console.log(cart);
+
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavMenu />
+      <Header />
+      <MenusList  />
+      {isCartOpen && <Cart />}
     </div>
   );
 }

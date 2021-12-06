@@ -1,0 +1,22 @@
+.menu__section{
+    background: #383838;
+    margin-top: -10rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__card{
+    margin-top: 20rem;
+    background: white;
+    box-shadow: none;
+    width: 100%;
+    max-width: 1020px;
+    padding: 0.8rem 1.4rem;
+    
+}
+.menu__list {
+    display: flex;
+    flex-direction: column;
+}

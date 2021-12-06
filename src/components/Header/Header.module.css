@@ -1,0 +1,40 @@
+.main__header{
+    position: relative;
+}
+
+.main__img{
+    
+    width: 100vw;
+    height: 25rem;
+
+    z-index: 0;
+    overflow: hidden;
+}
+.main__img img{
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+   
+}
+.main__body{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    background: #383838;
+    color: white;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 1px 2px 5px 2px #272424;
+}
+.main__body h2{
+    margin: 1rem 0;
+    font-size: 30px;
+}
+.main__body p{
+    margin-bottom: 1.5rem;
+}

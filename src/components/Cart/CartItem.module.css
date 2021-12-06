@@ -1,0 +1,35 @@
+.cart__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8A2B06;
+    padding: 15px;
+    margin: 0.5rem 0;
+}
+.cart__item h3{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.price__tag{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.price__tag p{
+    color: #8A2B06;
+}
+.price__tag span{
+    margin-left: 4rem;
+    padding: 5px 12px;
+    border: 1px solid rgb(115, 115, 194);
+    border-radius: 9px;
+}
+
+.qty__button > *{
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    margin: 0 0.2rem;
+    border: 1px solid #8a2b06;
+    cursor: pointer;
+}
